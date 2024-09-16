@@ -4,4 +4,34 @@ html {
 
   margin: 0px;
   padding: 0px;
+
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+li{
+  list-style: none;
+  display: inline;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+main{
+  background-color: blue;
+  display:grid;
+  gap: 10px;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.store-item{
+  background-color: red;
+  padding: 10px;
+  display:grid;
+  grid-row: 1fr 1fr 1fr 1fr;
+}
+footer{
+  display: flex;
+  justify-content: center;
 }
