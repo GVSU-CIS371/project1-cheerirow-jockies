@@ -1,44 +1,69 @@
+:root{
+  --font-size: clamp(.5rem, 1vw, .9rem);
+}
+
 body,
 html {
   margin: 0px;
   padding: 0px;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: teal;
+}
+h1{
+  font-size:1.2rem;
+}
+li, p, span{
+  font-size: .9rem;
+}
 img{
-  height: 145px;
-  width: 150px;
+  height: 3rem;
+  width: 3rem;
 }
 
 li{
   list-style: none;
   display: inline;
+  font-weight: bold;
 }
 header{
   display: flex;
   justify-content: space-between;
 }
 main{
-  background-color: blue;
+  background-color: black;
   display:grid;
-  gap: 10px;
+  gap: 1rem;
   grid-template-columns:1fr 1fr 1fr 1fr;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .store-item{
-  background-color: red;
+  background-color: teal;
   padding: 10px;
   display:grid;
-  grid-row: 1fr 1fr 1fr 1fr; 
+  grid-row: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  height: 190px;
 }
 .product-info > span{
-  margin: 10px;
+  margin: .5rem;
 }
 footer{
   display: flex;
   justify-content: center;
+}
+
+.store-item > p:first-of-type, span{
+  font-weight: bold;
+}
+.store-item > p:nth-of-type(2){
+  font-size: var(--font-size);
 }
 
 @media (max-width: 830px) {
