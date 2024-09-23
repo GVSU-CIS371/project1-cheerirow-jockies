@@ -1,5 +1,5 @@
 :root{
-  --font-size: clamp(.5rem, 1vw, .9rem);
+  --font-size: clamp(.7rem, 1vw, 1rem);
 }
 
 body,
@@ -21,8 +21,8 @@ li, p, span{
   font-size: .9rem;
 }
 img{
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 li{
@@ -33,6 +33,7 @@ li{
 header{
   display: flex;
   justify-content: space-between;
+  padding: 0 1rem
 }
 main{
   background-color: black;
@@ -49,7 +50,7 @@ main{
   display:grid;
   grid-row: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  height: 190px;
+  height: 235px;
 }
 .product-info > span{
   margin: .5rem;
